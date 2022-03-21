@@ -39,7 +39,11 @@ public class playerMovement : MonoBehaviour {
 
         //Attack
         if (Input.GetKeyDown(KeyCode.E)) {
+            anim.SetBool("isAttacking", true);
             Debug.Log("INSERT ATTACK HERE");
+        } else
+        {
+            anim.SetBool("isAttacking", false);
         }
     }
 
